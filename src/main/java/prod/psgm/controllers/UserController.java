@@ -5,23 +5,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import prod.psgm.dtos.UserDTO;
-import prod.psgm.services.interfaces.UserSerivce;
+import prod.psgm.services.interfaces.UserService;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/user")
 public class UserController {
-    private final UserSerivce userSerivce;
+    private final UserService userService;
 
     @Autowired
-    public UserController(UserSerivce userSerivce) {
-        this.userSerivce = userSerivce;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping("/tutors")
     public List<UserDTO> tutors() {
-        return userSerivce.getAllTutors();
+        return userService.getAllTutors();
     }
 
 }

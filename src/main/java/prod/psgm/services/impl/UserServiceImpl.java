@@ -6,13 +6,14 @@ import org.springframework.stereotype.Service;
 import prod.psgm.dtos.UserDTO;
 import prod.psgm.models.User;
 import prod.psgm.repositories.UserRepository;
-import prod.psgm.services.interfaces.UserSerivce;
+import prod.psgm.services.interfaces.UserService;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
-public class UserServiceImpl implements UserSerivce {
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
@@ -32,4 +33,18 @@ public class UserServiceImpl implements UserSerivce {
     public List<UserDTO> getAllTutors() {
         return userRepository.findAllByRole("ROLE_TUTOR").stream().map((user) -> modelMapper.map(user, UserDTO.class)).collect(Collectors.toList());
     }
+
+    @Override
+    public void deleteUser(UUID id) {
+        userRepository.deleteById(id);
+    }
+
+    @Override
+    public void deleteAllUsers() {
+        userRepository.deleteAll();
+    }
+
+
+
+
 }
