@@ -1,0 +1,223 @@
+body {
+    background: linear-gradient(165deg, rgb(186, 172, 172, 100%) 25%, rgb(21, 45, 173) 50%, rgb(235, 31, 31) 75%); 
+    height: 100vh; 
+    margin: 0; 
+    background-attachment: fixed;
+    color: white
+}
+
+.navLink2 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px 25px 25px 25px;
+}
+
+
+.navLink1 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px 25px 25px 25px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.navLink0 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px 20px 25px 25px;
+    border-right: 2px solid white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.navLink2:hover {
+    /* text-decoration: underline; */
+    background-color: rgb(197, 194, 198, 35%);
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navLink1:hover {
+    /* text-decoration: underline; */
+    background-color: rgb(197, 194, 198, 35%);
+}
+
+.navLink0:hover {
+    /* text-decoration: underline; */
+    background-color: rgb(197, 194, 198, 35%);
+}
+
+div .navLink2 {
+    border-right: 2px solid white;
+} 
+
+
+.asideLink {
+    text-decoration: none;
+    color: #E4DEDE;
+    font-size: 15px;
+    width: max-content;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+}
+
+.asideLink:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.asideLink.active {
+    background-color: rgb(197, 194, 198, 35%);
+    border-radius: 50px;
+    color: white;
+}
+/* .asideLink:focus {
+    background-color: #C4BABA;
+    border-radius: 20px;
+} */
+
+.sendButton {
+    background: transparent;
+    border: 2px solid #C3C4D3;
+    color: #C3C4D3;
+    width: max-content;
+    height: max-content;
+    border-radius: 80px;
+    font-size: 15px;
+    font-family: "Inter-Light";
+    padding: 10px 40px;
+}
+
+.sendButton:hover {
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.form {
+    background-color: rgb(197, 194, 198, 45%);
+    border:none;
+    border-radius: 50px;
+    width: 250px;
+    font-size: 15px;
+    color: rgb(255, 255, 255, 75%);
+    padding: 10px 30px;
+    font-family:'Inter-Light'
+}
+
+.form:hover {
+    background-color: rgb(197, 194, 198, 65%);
+}
+
+.form:focus {
+    outline: 2px solid white;
+}
+
+.labelFormHome {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.sendBtnHome {
+    background-color: rgb(197, 194, 198, 45%);
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    font-family:'Inter-Light';
+    border-radius: 50px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sendBtnHome:hover {
+    background-color: rgb(197, 194, 198, 65%);
+    cursor:pointer;
+}
+
+.aboutYourself {
+    background-color: rgb(197, 194, 198, 45%);
+    color: white;
+    font-family: 'Inter-Light';
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    height: 265px;
+    margin-top: 40px;
+    margin-right: 35px;
+    padding: 40px;
+    width: 200px;
+    
+}
+
+.aboutYourself:focus {
+    outline: 2px solid white;
+}
+
+.sendFile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+    color: white;
+}
+
+.custom-file-input {
+    display: none; 
+}
+
+.custom-file-label {
+    padding: 10px 15px;
+    background-color: rgb(197, 194, 198, 45%);
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-file-label:hover {
+    background-color:rgb(197, 194, 198, 65%);
+}
+
+.photoSend {
+    padding: 5px;
+}
+
+.photoSend:hover {
+    background-color:rgb(197, 194, 198, 35%);
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+
+.active {
+    background-color: rgb(197, 194, 198, 35%);
+}
+  
+
+.editProfileBtn {
+    color: rgb(255, 255, 255, 85%);
+    background-color: rgb(197, 194, 198, 25%);
+    width: max-content;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.editProfileBtn:hover {
+    background-color: rgb(197, 194, 198, 45%);
+}
